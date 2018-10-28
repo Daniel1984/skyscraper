@@ -19,7 +19,7 @@ server.on('uncaughtException', (request, response, route, error) => {
   response.send(error);
 });
 
-server.get('/flights', ryanairScraper);
+server.get('/flights', wizzairScraper);
 
 server.listen(port, host, () => {
   console.log('%s listening at %s', server.name, server.url);
